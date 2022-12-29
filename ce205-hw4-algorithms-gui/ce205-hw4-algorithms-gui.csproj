@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0776D82B-DF97-4922-841F-D60DFE91FF07}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ce205_hw4_algorithms_gui</RootNamespace>
+    <AssemblyName>ce205-hw4-algorithms-gui</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormBoyerMoore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBoyerMoore.Designer.cs">
+      <DependentUpon>FormBoyerMoore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHorspool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHorspool.Designer.cs">
+      <DependentUpon>FormHorspool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHuntSzymanski.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHuntSzymanski.Designer.cs">
+      <DependentUpon>FormHuntSzymanski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKnuthMorrisPratt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKnuthMorrisPratt.Designer.cs">
+      <DependentUpon>FormKnuthMorrisPratt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNeedlemanWunsch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNeedlemanWunsch.Designer.cs">
+      <DependentUpon>FormNeedlemanWunsch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSmithWaterman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSmithWaterman.Designer.cs">
+      <DependentUpon>FormSmithWaterman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTrie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTrie.Designer.cs">
+      <DependentUpon>FormTrie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBoyerMoore.resx">
+      <DependentUpon>FormBoyerMoore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHorspool.resx">
+      <DependentUpon>FormHorspool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHuntSzymanski.resx">
+      <DependentUpon>FormHuntSzymanski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKnuthMorrisPratt.resx">
+      <DependentUpon>FormKnuthMorrisPratt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNeedlemanWunsch.resx">
+      <DependentUpon>FormNeedlemanWunsch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSmithWaterman.resx">
+      <DependentUpon>FormSmithWaterman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTrie.resx">
+      <DependentUpon>FormTrie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ce205-hw4-algorithms-cs\ce205-hw4-algorithms-cs.csproj">
+      <Project>{eb692e38-43cd-4513-a5fa-ce83df1d2358}</Project>
+      <Name>ce205-hw4-algorithms-cs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
